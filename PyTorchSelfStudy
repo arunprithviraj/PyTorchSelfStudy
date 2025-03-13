@@ -1,25 +1,6 @@
 {
   "cells": [
     {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/arunprithviraj/PyTorchSelfStudy/blob/main/PyTorchSelfStudy\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "markdown",
-      "source": [
-        "*[italicized text](https://)*# New Section"
-      ],
-      "metadata": {
-        "id": "W2i8I27qEvr7"
-      }
-    },
-    {
       "cell_type": "code",
       "source": [
         "import torch\n",
@@ -35,9 +16,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "Mld4Cb7tCUI8",
-        "outputId": "10bc85b5-0313-42f9-9c44-96e80d620f84"
+        "outputId": "4e5c2db7-d005-4842-8b5d-af852dbe196f"
       },
-      "execution_count": 2,
+      "execution_count": 3,
       "outputs": [
         {
           "output_type": "stream",
@@ -49,6 +30,15 @@
           ]
         }
       ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "*[italicized text](https://)*# New Section"
+      ],
+      "metadata": {
+        "id": "W2i8I27qEvr7"
+      }
     },
     {
       "cell_type": "code",
@@ -64,7 +54,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "Nw3Xk35GC0ZU",
-        "outputId": "423a324d-f4db-41cf-84cc-5d1e3fa614e8"
+        "outputId": "9cb135d8-93ae-4153-97ec-5b50c628bec8"
       },
       "execution_count": 3,
       "outputs": [
@@ -95,11 +85,11 @@
         "vector.ndim"
       ],
       "metadata": {
-        "id": "5QEvcFS3FfPO",
-        "outputId": "2f0a2ef9-5b4d-43fb-fb86-960c666a9d73",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "5QEvcFS3FfPO",
+        "outputId": "117ca91b-f482-4f35-afb9-0dbc5b7f599f"
       },
       "execution_count": 4,
       "outputs": [
@@ -128,11 +118,11 @@
         "vector.shape"
       ],
       "metadata": {
-        "id": "Vq023qKzGKtN",
-        "outputId": "c67a0e2e-3d93-4acb-a07a-fa39190ec4af",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "Vq023qKzGKtN",
+        "outputId": "e3a0b0e3-f387-4f1b-a770-fdcaa33196a8"
       },
       "execution_count": 5,
       "outputs": [
@@ -157,11 +147,11 @@
         "matrix.ndim\n"
       ],
       "metadata": {
-        "id": "LFJHSTmeGSBJ",
-        "outputId": "f6d03e7a-7fa9-470c-f8fb-385750dd6114",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "LFJHSTmeGSBJ",
+        "outputId": "6e86c3b3-ef32-4a2d-e018-6b255ba69e8f"
       },
       "execution_count": 6,
       "outputs": [
@@ -191,11 +181,11 @@
         "matrix.shape"
       ],
       "metadata": {
-        "id": "DiLS1LX-Ghmv",
-        "outputId": "38307099-e309-499d-bc61-6006edaba496",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "DiLS1LX-Ghmv",
+        "outputId": "f8664c35-6376-4ecc-f378-9f177eb5b817"
       },
       "execution_count": 7,
       "outputs": [
@@ -210,14 +200,68 @@
           "execution_count": 7
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "matrix[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qMUZqcv0cQ09",
+        "outputId": "5cacb511-1419-4877-c4c2-7d272c7ed311"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "tensor([1, 2])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "TENSOR = torch.tensor([[[[1,3,5],\n",
+        "          [2,4,6],\n",
+        "          [3,6,9]]]])\n",
+        "TENSOR.shape"
+      ],
+      "metadata": {
+        "id": "WvSF0e3vpTSX",
+        "outputId": "39340580-216b-405d-c6fa-5485b06a455a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "torch.Size([1, 1, 3, 3])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
     }
   ],
   "metadata": {
     "colab": {
       "name": "Welcome To Colab",
       "provenance": [],
-      "gpuType": "T4",
-      "include_colab_link": true
+      "gpuType": "T4"
     },
     "kernelspec": {
       "display_name": "Python 3",
